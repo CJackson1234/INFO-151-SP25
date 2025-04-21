@@ -318,7 +318,7 @@ template {
   --white: #ffffff;
   --Ghost: #F0FAFF;
   --LilyWhite:#ECF9FF;
-  --Snowdrop: #F9FDFF;
+  --snowdrop: #F9FDFF;
   --Grey: #9090A7;
   --NightBlue:#060640;
   --Aqua: #00E5CC;
@@ -373,5 +373,26 @@ textarea {
     Hero
 ============= */
 #hero {
-  background-color: red;
+  background-color: var(--LilyWhite);
+}
+
+section article h1 {
+  color: var(--NightBlue);
+}
+section article p {
+  color: var(--Grey);
+}
+section article a:link, section article a:visited {
+  background-color: var(--NightBlue);
+  color: var(--white);
+}
+section article button {
+  background-color: var(--white);
+  border: none;
+}
+section article #hero-card {
+  background-color: var(--snowdrop);
+}
+section article #hero-card h5 {
+  color: var(--NightBlue);
 }
