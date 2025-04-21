@@ -316,6 +316,12 @@ template {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --Ghost: #F0FAFF;
+  --LilyWhite:#ECF9FF;
+  --Snowdrop: #F9FDFF;
+  --Grey: #9090A7;
+  --NightBlue:#060640;
+  --Aqua: #00E5CC;
 }
 
 /* ---------------- Font Sizing ---------------- */
@@ -324,6 +330,10 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
+.img-scaler {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -359,3 +369,9 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Hero
+============= */
+#hero {
+  background-color: red;
+}
