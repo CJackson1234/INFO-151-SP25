@@ -5,20 +5,19 @@
 
 #hero{  
 background-color: var(--LilyWhite);
+padding: 56px 24px;
 }
 section{
 
     article{
-        // h1{
-        //     color: var(--NightBlue);
-        //     font-size: helpers.rem-calc(50);
-        // }
 
 
         p{
             color: var(--Grey);
             font-weight: 600;
             line-height: helpers.rem-calc(28);
+            margin-top: 24px;
+            margin-bottom: 24px;
         }
         // LOVE HATE //
         a:link, a:visited{
@@ -27,6 +26,13 @@ section{
             font-size: helpers.rem-calc(14);
             font-weight: 600;
             text-decoration: none;
+            padding: 22px 36px ;
+            border-radius: 6px;
+
+            // --code week 4
+            display: inline-block;
+            // --
+
         }
         a:hover, a:focus{
 
@@ -34,12 +40,20 @@ section{
         button{
             background-color: var(--white);
             border: none;
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            margin-left: 30px;
         
         }
 
 
     #hero-card{
             background-color: var(--snowdrop);
+            margin-top: 70px;
+            padding: 24px 20px;
+            border-radius: 12px;
+
             h5{
                 color: var(--NightBlue);
                 font-weight: 600;
@@ -49,7 +63,7 @@ section{
             p{
                 font-size: helpers.rem-calc(14);
                 font-weight: 600;
-                line-height: helpers.rem-calc(24);
+                // line-height: helpers.rem-calc(24);
             }
         }
     }
