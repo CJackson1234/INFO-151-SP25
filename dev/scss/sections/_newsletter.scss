@@ -13,6 +13,7 @@
             color: var(grey);
             font-weight: 600;
             line-height: helpers.rem-calc(28);
+            margin: 16px 0;
         }
     
         form{
@@ -21,17 +22,21 @@
                 border: none;
                 color: var(--Grey);
                 font-weight: 600;
+                width: 100%;
+                padding: 24px 8px;
+                box-sizing: border-box;
+                border-radius: 8px;
+              
     
             }
-    
-            button{
-                border: none;
-                background-color: var(--NightBlue);
-                color: var(--white);
-                font-size: helpers.rem-calc(14);
-                font-weight: 600;
-    
+            aside{
+            text-align: right;
             }
+
+        }
+
+        aside{
+            display: none;
         }
     }
     }
