@@ -442,12 +442,21 @@ section article #hero-card p {
 }
 #packages #package-card-container p {
   color: var(--NightBlue);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 #packages #package-card-container p h4 {
   color: var(--Grey);
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  font-weight: 600;
 }
 #packages #package-card-container p h3 {
   color: var(--Aqua);
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  font-weight: 600;
 }
 #packages #package-card-container selected {
   background-color: var(--white);
@@ -461,13 +470,18 @@ section article #hero-card p {
 }
 #newsletter p {
   color: var(grey);
+  font-weight: 600;
+  line-height: 1.75rem;
 }
 #newsletter form input {
   border: none;
   color: var(--Grey);
+  font-weight: 600;
 }
 #newsletter form button {
   border: none;
   background-color: var(--NightBlue);
   color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
 }

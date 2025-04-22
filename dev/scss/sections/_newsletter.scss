@@ -6,12 +6,12 @@
 #newsletter{
 
     background-color: var(--LilyWhite);
-    // h1{
-    //     color: var(--NightBlue);
-    // }
+
 
     p{
         color: var(grey);
+        font-weight: 600;
+        line-height: helpers.rem-calc(28);
     }
 
     form{
@@ -19,6 +19,7 @@
         input{
             border: none;
             color: var(--Grey);
+            font-weight: 600;
 
         }
 
@@ -26,6 +27,8 @@
             border: none;
             background-color: var(--NightBlue);
             color: var(--white);
+            font-size: helpers.rem-calc(14);
+            font-weight: 600;
 
         }
     }
