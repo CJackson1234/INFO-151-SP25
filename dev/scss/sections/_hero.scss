@@ -7,67 +7,107 @@
     background-color: var(--lilyWhite);
     padding: 56px 24px;
 
+    @include helpers.xl{
 
-    //16px = 1em
+    padding: 100px 24px;
+    }
 
-    section{
+#hero-content-container{
 
-        article{
+    @include helpers.md{
+        display: grid;
+        grid-template-areas: "hero-img"
+                            "hero-content";
+        // grid-template-columns: 50% auto;
+    }
+
+@include helpers.xl{
+         grid-template-columns: 40% auto;
+         grid-template-areas: "hero-img hero-content";
+
+         max-width: 1200px;
+         margin: 0 auto;
+}
+
+   //16px = 1em
+
+   section{
+    @include helpers.md{
+        grid-area: hero-content;
+        padding: 0 15vw;
+    }
+
+    @include helpers.lg{
+        padding: 0 30vw;
+    }
+
+    @include helpers.xl{
+        padding: 0;
+    }
+
+    article{
 
 
-            p{
-                margin-top: 24px;
-                margin-bottom: 24px;
-            }
-
-            // LOVE HATE  //
-            a:link, a:visited{
-                // background-color: var(--nightBlue);
-                // color: var(--white);
-                // font-size: helpers.rem-calc(14);
-                // font-weight: 600;
-                // padding: 22px 36px;
-                // border-radius: 6px;
-
-                // // -- code for week 4
-                // display: inline-block;
-                // // -- 
-                
-            }
-            a:hover, a:focus{
-
-            }
-            button{
-                background-color: var(--white);
-                border: none;
-                height: 60px;
-                width: 60px;
-                border-radius: 100%;
-                margin-left: 30px;
-            }
+        p{
+            margin-top: 24px;
+            margin-bottom: 24px;
         }
 
-        #hero-card{
-            background-color: var(--snowdrop);
-            margin-top: 70px;
-            padding: 24px 20px;
-            border-radius: 12px;
+        // LOVE HATE  //
+        a:link, a:visited{
+            // background-color: var(--nightBlue);
+            // color: var(--white);
+            // font-size: helpers.rem-calc(14);
+            // font-weight: 600;
+            // padding: 22px 36px;
+            // border-radius: 6px;
 
-            h5{
-                color: var(--nightBlue);
-                font-weight: 600;
-                font-size: helpers.rem-calc(14);
-            }
+            // // -- code for week 4
+            // display: inline-block;
+            // // -- 
+            
+        }
+        a:hover, a:focus{
 
-            p{
-                font-size: helpers.rem-calc(14);
-                font-weight: 600;
-                // line-height: helpers.rem-calc(24);
-            }
+        }
+        button{
+            background-color: var(--white);
+            border: none;
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            margin-left: 30px;
         }
     }
 
-    aside{
+    #hero-card{
+        background-color: var(--snowdrop);
+        margin-top: 70px;
+        padding: 24px 20px;
+        border-radius: 12px;
 
+        h5{
+            color: var(--nightBlue);
+            font-weight: 600;
+            font-size: helpers.rem-calc(14);
+        }
+
+        p{
+            font-size: helpers.rem-calc(14);
+            font-weight: 600;
+            // line-height: helpers.rem-calc(24);
+        }
     }
 }
+
+aside{
+    @include helpers.md{
+        grid-area: hero-img;
+    }
+
+}
+}
+}
+
+
+ 
