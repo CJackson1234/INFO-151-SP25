@@ -1,0 +1,71 @@
+/* =============
+    Flexbox Demo
+============= */
+/* =============
+    Mixins
+============= */
+/* =============
+    Variables
+============= */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --ghost: #F0FAFF;
+  --jaguar: #000020;
+  --grey: #9090A7;
+  --nightBlue: #060640;
+  --aqua: #00E5CC;
+  --lilyWhite: #ECF9FF;
+  --snowdrop: #F9FDFF;
+}
+
+/* ---------------- Font Sizing ---------------- */
+html {
+  font-size: 100%;
+}
+
+/* ---------------- Media Queries ---------------- */
+#flexbox {
+  background-color: #264653;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#flexbox #flex-child {
+  height: 200px;
+  width: 200px;
+  background-color: #2a9d8f;
+}
+#flexbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#flexbox ul li {
+  height: 200px;
+  width: 200px;
+  margin: 0 20px;
+}
+#flexbox ul #b1 {
+  background-color: #e9c46a;
+}
+#flexbox ul #b2 {
+  background-color: #f4a261;
+  margin: left auto;
+}
+#flexbox ul #b3 {
+  background-color: #e75f51;
+}
+#flexbox ul #b4 {
+  background-color: #2a9d8f;
+}
