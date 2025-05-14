@@ -7,6 +7,9 @@
     background-color: var(--lilyWhite);
     padding: 56px 24px;
 
+    // this is for AOS to work on the work section
+    height: 100vw;
+
     @include helpers.xl{
 
     padding: 100px 24px;
